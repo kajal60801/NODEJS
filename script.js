@@ -191,3 +191,126 @@
 // }
 // doingStuff();
 // console.log(x);
+//imediately invoked function expression
+// (function(){
+//     console.log("iife");
+// })()
+// function getRecursive(nr){
+//     console.log(nr);
+//     getRecursive(--nr);
+
+// }
+// getRecursive(3);
+// function getRecursive(nr){
+    // console.log(nr);
+//     if(nr>0){
+//         getRecursive(--nr)
+//     }
+//     console.log(nr);
+// }
+// getRecursive(3);
+// function logRecursive(nr){
+//     console.log("started function :",nr);
+//     if(nr>0){
+//         logRecursive(nr-1);
+//     }
+//     else{
+//         console.log("done with recursion:",nr);
+//     }
+//     console.log("ended function:",nr);
+// }
+// logRecursive(3);
+//the performance of recurssion is slightly worse than the performance of regular iteration using a loop. so if this cause a bottleneck situation that would really slow down your application then you might want to consider another approach
+//nested function
+// function doOuterFunctionStuff(nr){
+//     console.log("outer function");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log(x+7);
+//         console.log("i can acces the outer variavble:",nr);
+//     }
+// }
+// doOuterFunctionStuff(5);
+// function doOuterFunctionStuff(nr){
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         let z=10;
+
+//     }
+//     console.log("not accesbile",z);
+// }
+// doOuterFunctionStuff(2);
+//anonymous function
+// function doingdtuffAnonymusly(){
+//     console.log("not secret though.")
+// }
+// function(){
+//     console.log("not so secret though";)
+// }
+//function callbacks
+// let functionVariable=function(){
+//     console.log("not so secret");
+// }
+// function doFlexibleStuff(executeStuff){
+//     executeStuff();
+//     console.log("inside doflexblestuff function.");
+// }
+// doFlexibleStuff(functionVariable);
+// function doOuterFunctionStuff(nr){
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         let z=10;
+
+//     }
+//     console.log("not accesbile",z);
+// }
+// doOuterFunctionStuff(2);
+// let youGotThis=function(){
+//     console.log("you are doing really well, keep coding");
+// };
+// setTimeout(youGotThis,1000);
+
+//setInterval() function-if you need more encouraged you can use this. it work very similary but instead the specified function must onceit will keep on excuting it with specified interval
+
+// setInterval(youGotThis,1000);
+//quiz
+// let val =10;
+// function tester(val){
+//     val+=10;
+//     if(val<100){
+//         return tester(val);
+//     }
+//     return val;
+// }
+// tester(val);
+
+// console.log(val);
+// let testFunction=function(){
+//     console.log("hello")
+
+// }();
+// (function(){
+//     console.log("welcome");
+// })();
+// (function(){
+//     console.log("welcome");
+// })();
+// (function(){
+//     let firstname = "kajal";
+// })();
+
+// let result=(function(){
+//     let firstname="kajal";
+//     return firstname;
+// })();
+// console.log(result);
+// (function(firstname){
+//     console.log("my name is "+ firstname);
+// })("kajal");
+// let test2 = (num)=>num+5;
+// console.log(test2(14));
+// var addFive1=function addFive1(num){
+//     return num+2;
+// };
+// let addFive2 =(num)=>num+2;
+// console.log(addFive1(14));
