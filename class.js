@@ -185,7 +185,8 @@
 //PROTOTYPES
 
 
-//is the mechanism in js that makes it possible to havbe object yhen nothing specvified ehen creating a class the object
+//is the mechanism in js that makes it possible to have object then nothing specified ehen creating a class the object inherit from the object
+
 
 // class Person{
 //         constructor(firstname,lastname){
@@ -206,3 +207,5 @@
 // let p=new Person("kajal " ,"singh");
 // console.log(p.favoritecolor);
 // p.introduce();
+
+
