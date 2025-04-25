@@ -1,5 +1,6 @@
-let text ="";
-// fruits.forEach (function(value,key){
-//     text+=key+"="+value;
-// })
-// console.log(text);
+const arr=[
+//     "one",
+//     "two",
+//     "three",
+// ];
+// console.log(arr);
